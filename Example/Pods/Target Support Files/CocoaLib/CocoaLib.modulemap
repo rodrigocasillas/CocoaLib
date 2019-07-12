@@ -1,0 +1,6 @@
+framework module CocoaLib {
+  umbrella header "CocoaLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
