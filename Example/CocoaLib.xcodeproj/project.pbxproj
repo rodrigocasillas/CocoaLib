@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06C3CA19040A4109EC934659 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		06C3CA19040A4109EC934659 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		11A39861D88BA7A266359A5E /* Pods_CocoaLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE138E90A0902D34497C2D6 /* Pods-CocoaLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaLib_Tests.release.xcconfig"; path = "Target Support Files/Pods-CocoaLib_Tests/Pods-CocoaLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		38A910645E83116D4EB8E0E0 /* Pods-CocoaLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaLib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CocoaLib_Tests/Pods-CocoaLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -42,11 +42,11 @@
 		607FACE51AFB9204008FA782 /* CocoaLib_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaLib_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		A3875E32714CBD9E6FE7982B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A3875E32714CBD9E6FE7982B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ABD9920E115A3684A6787CEA /* Pods-CocoaLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaLib_Example.release.xcconfig"; path = "Target Support Files/Pods-CocoaLib_Example/Pods-CocoaLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BFD163C81C25033C6E486331 /* Pods-CocoaLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaLib_Example.debug.xcconfig"; path = "Target Support Files/Pods-CocoaLib_Example/Pods-CocoaLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CCC3F90A3D4229B42690EF8E /* Pods_CocoaLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE0B8A4DA3CEE7AFC30FF7D0 /* CocoaLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CocoaLib.podspec; path = ../CocoaLib.podspec; sourceTree = "<group>"; };
+		DE0B8A4DA3CEE7AFC30FF7D0 /* CocoaLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CocoaLib.podspec; path = ../CocoaLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				38A910645E83116D4EB8E0E0 /* Pods-CocoaLib_Tests.debug.xcconfig */,
 				2BE138E90A0902D34497C2D6 /* Pods-CocoaLib_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,17 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = VJX57H8R3T;
 						LastSwiftMigration = 0900;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = VJX57H8R3T;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +233,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -428,6 +435,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -473,6 +481,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -482,6 +491,7 @@
 			baseConfigurationReference = BFD163C81C25033C6E486331 /* Pods-CocoaLib_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VJX57H8R3T;
 				INFOPLIST_FILE = CocoaLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -497,6 +507,7 @@
 			baseConfigurationReference = ABD9920E115A3684A6787CEA /* Pods-CocoaLib_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VJX57H8R3T;
 				INFOPLIST_FILE = CocoaLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -511,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38A910645E83116D4EB8E0E0 /* Pods-CocoaLib_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = VJX57H8R3T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -533,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2BE138E90A0902D34497C2D6 /* Pods-CocoaLib_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = VJX57H8R3T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

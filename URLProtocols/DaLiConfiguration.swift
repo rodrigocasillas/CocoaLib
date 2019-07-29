@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+class DaLiConfiguration {
+    
+    init(config: URLSessionConfiguration) {
+        
+    }
+    
+    public static func config() {
+        URLProtocol.registerClass(DaLiURLProtocol.self)
+    }
+}
